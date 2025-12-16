@@ -1,0 +1,66 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Wrapper */
+.main-content {
+  background-color: #0a0520; 
+  color:whitesmoke;
+}
+
+/* This makes every section feel like a full page */
+.page-section {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center;     /* Centers content horizontally */
+  padding: 40px;
+}
+
+/* Styling for the first page */
+/* .first-page {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
+} */
+.SignUp {
+    margin-top: 40px;
+  background-color: aqua;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3%;
+  /* cursor: pointer; */
+  transition: transform 0.2s; /* Important for the smooth zoom */
+}
+
+.SignUp:hover {
+  transform: scale(1.1); /* This is the zoom */
+}
+
+/* Modern Card Style */
+.kyc-card {
+  color:rgb(40, 4, 40);
+  background: white;
+  border-radius: 12px;
+  padding: 80px;
+  margin: 10px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+.kyc-card:hover {
+  transform: translateY(10px); /* Lifts the card up */
+  color:peachpuff;
+}
+.card-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li{
+    color: rgb(221, 202, 134);
+}
