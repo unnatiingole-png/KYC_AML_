@@ -26,8 +26,10 @@
   background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
 } */
 .SignUp {
-    margin-top: 40px;
+  margin-top: 40px;
   background-color: aqua;
+  color:black;
+  border-radius: 20px;
   padding: 10px 20px;
   border: none;
   border-radius: 3%;
@@ -49,6 +51,17 @@
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   width: 250px;
 }
+.demo{
+  color:black;
+margin-top:50px;
+padding:10px 20px;
+border-radius:10%;
+background-color: peachpuff;
+}
+.demo:hover{
+transform: scale(1.1);
+}
+
 .kyc-card:hover {
   transform: translateY(10px); /* Lifts the card up */
   color:peachpuff;
@@ -63,4 +76,101 @@
 
 li{
     color: rgb(221, 202, 134);
+}
+.fourth-page{
+display:flex;
+flex-direction:column;
+justify-content: flex-start;
+gap:50px;
+}
+.image-grid{
+display:flex;
+flex-direction:row;
+justify-content: flex-start;
+gap: 30px;
+flex-wrap: wrap; /* Allows stacking on mobile */
+}
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 2;
+    transform: translateY(0);
+  }
+}
+.image-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Keeps aspect ratio clean */
+  display: block;
+  animation: slideUpFade 1s ease-out forwards;
+}
+
+.image-card {
+  width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+/* Container Styling */
+.third-page {
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+/* FAQ Box */
+.faq-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.faq-btn {
+  background-color: #0f4aa8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Social Grid */
+.social-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.social-card {
+  width: 150px;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.social-card:hover {
+  transform: translateY(-3px);
+  background: #334155;
+  border-color: #3b82f6;
+}
+
+/* Footer Bottom */
+.mini-footer {
+  margin-top: 100px;
+  border-top: 1px solid #334155;
+  padding-top: 20px;
+  font-size: 0.8rem;
+  color: #64748b;
 }
